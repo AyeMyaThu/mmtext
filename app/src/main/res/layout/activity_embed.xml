@@ -20,7 +20,7 @@
         android:text="နေကောင်းလား" />
 
     <CheckBox
-        android:text="ချက်ခ္ဘောက်စ်"
+        android:text="ချက်ဘောက်စ်"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
