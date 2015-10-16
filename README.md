@@ -1,7 +1,7 @@
 # MMText
 Developed by Technomation
 
-A library to embed Myanmar Unicode on Android apps because normal embedding just don't work on some(most) devices.
+A library to embed Myanmar Unicode on Android apps because normal embedding just don't work on some(most) devices. MMText supports from api 8(Froyo 2.2).
 
 Embedding Myanmar Unicode Standardized fonts using setTypeface don't work on devices that doesn't support reordering. Also some devices have a setting called display font and if a user choose zawgyi, he won't see unicode font even the font is embedded by setTypeface(). So, Technomation made a libarary called MMText. You can download the project and see the sample app for usage. All contributions are welcomed.
 
