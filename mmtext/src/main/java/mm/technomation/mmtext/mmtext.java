@@ -6,8 +6,12 @@ import android.content.res.Resources;
 import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.support.v7.widget.Toolbar;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.util.DisplayMetrics;
 import android.view.Display;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -24,6 +28,18 @@ public class mmtext {
     public static final int TEXT_ZAWGYI = 0;
     public static final int TEXT_UNICODE = 1;
     public static final int TEXT_XPartial = 2;
+
+    public static void prepareMenuItem(Context c, int EnocodedText, boolean SamsungSafe, boolean SyllabelBreak, Menu menu, MenuItem[] menuItems) {
+
+        for(int i = 0; i < menuItems.length; i++) {
+            MenuItem item = menuItems[i];
+            String st = processText(item.getTitle().toString(), EnocodedText, SamsungSafe, SyllabelBreak);
+            SpannableString title = new SpannableString(st);
+            title.setSpan(new MMTextTypefaceSpan(c), 0, title.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+            menu.removeItem(item.getItemId());
+            menu.add(item.getGroupId(), item.getItemId(), item.getOrder(), title);
+        }
+    }
 
     public static void prepareActivity(Activity a, int EncodedText, boolean SamsungSafe,
                                        boolean SyllabelBreak) {

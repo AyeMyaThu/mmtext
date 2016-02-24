@@ -3,7 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="mm.technomation.mmtextsample.EmbedActivity">
   <item android:id="@+id/action_settings"
-      android:title="@string/action_settings"
+      android:title="ဆက်တင်"
       android:orderInCategory="100"
       app:showAsAction="never"/>
+
+    <item android:id="@+id/action_about"
+        android:title="အကြောင်းအရာ"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
 </menu>
