@@ -9,6 +9,6 @@
 
     <item android:id="@+id/action_about"
         android:title="အကြောင်းအရာ"
-        android:orderInCategory="101"
+        android:orderInCategory="102"
         app:showAsAction="never"/>
 </menu>
