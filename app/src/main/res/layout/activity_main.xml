@@ -48,6 +48,13 @@
             android:text="ကျေးဇူးတင်ပါတယ်"
             />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="showMMToast"
+            android:text="ယူနီကုဒ် Toast" />
+
     </LinearLayout>
 
     <Button
@@ -59,9 +66,8 @@
         />
 
     <mm.technomation.mmtext.MMEditText
-        android:hint="မင်္ဂလာပါ"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content"
+        android:hint="မင်္ဂလာပါ" />
 
 </LinearLayout>
