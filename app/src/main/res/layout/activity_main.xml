@@ -48,6 +48,13 @@
             android:text="ကျေးဇူးတင်ပါတယ်"
             />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="showMMToast"
+            android:text="ယူနီကုဒ် Toast" />
+
     </LinearLayout>
 
     <Button
@@ -59,9 +66,27 @@
         />
 
     <mm.technomation.mmtext.MMEditText
-        android:hint="မင်္ဂလာပါ"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="မင်္ဂလာပါ" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <mm.technomation.mmtext.MMRadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="မင်္ဂလာပါ" />
+
+        <mm.technomation.mmtext.MMRadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ကျေးဇူးတင်ပါတယ် " />
+    </RadioGroup>
 
 
 </LinearLayout>

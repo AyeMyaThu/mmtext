@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
+import mm.technomation.mmtext.MMToast;
 import mm.technomation.mmtext.mmtext;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,5 +27,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void onButtonClicked(View v) {
         startActivity(new Intent(getBaseContext(), EmbedActivity.class));
+    }
+
+    public void showMMToast(View view) {
+        String text = "မင်္ဂလာပါ ကျေးဇူးတင်ပါတယ်";
+        MMToast.makeMMText(this, text, Toast.LENGTH_LONG).show();
     }
 }
